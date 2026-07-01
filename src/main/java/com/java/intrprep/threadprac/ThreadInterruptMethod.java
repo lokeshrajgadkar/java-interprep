@@ -2,6 +2,7 @@ package com.java.intrprep.threadprac;
 
 public class ThreadInterruptMethod extends Thread{
     //This example covers the interrupt method of Thread
+    //t1.interrupt() //current thread will interrupt the mentioned thread, throws InterruptedException
 
     public ThreadInterruptMethod(String name){
         super(name);
@@ -12,7 +13,7 @@ public class ThreadInterruptMethod extends Thread{
         try {
             System.out.println("Thread " + currentThread().getName() + " started...");
             Thread.sleep(3000);
-            System.out.println("Thread completed");
+            System.out.println("Thread " + currentThread().getName() + "completed");
         } catch (InterruptedException ex){
             System.out.println(ex);
         }

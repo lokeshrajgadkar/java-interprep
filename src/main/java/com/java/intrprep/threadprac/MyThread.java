@@ -2,6 +2,11 @@ package com.java.intrprep.threadprac;
 
 public class MyThread extends Thread {
     // This exmaple covers Thread methods- start, run, sleep, thread name, setPriority
+
+    // run(){} //actual implementation, it is overriden method of Thread class
+
+    // t1.setPriority(int priority); //1 to 10, 10 being highest priority,
+    // Thread priority only provides a scheduling hint. The JVM and operating system decide the actual execution order.
     public MyThread(String name){
         super(name);
     }
